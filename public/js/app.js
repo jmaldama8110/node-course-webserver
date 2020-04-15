@@ -18,7 +18,7 @@ weatherForm.addEventListener('submit',(e)=>{
     mensage01.textContent = 'Buscando...'
     mensage02.textContent = ''
 
-    fetch(  'http://localhost:3000/weather?ciudadBusq=' + cadenaBusqueda).then( (response) =>{
+    fetch(  '/weather?ciudadBusq=' + cadenaBusqueda).then( (response) =>{
         // manda la respuesta a la consola del browser
         response.json().then( (data) =>{
             if(data.error){

@@ -12,6 +12,7 @@ const folderViews = ruta.join(__dirname,'../templates/views')
 const folderPartials = ruta.join(__dirname,'../templates/partials')
 
 const app = express()
+const port = proces.env.PORT || 3000 // puerto asignado por Heorku o el default es el 3000 (ambiente desarrollo)
 
 /// define las ruta de configuacion de Express
 app.set('view engine', 'hbs');
@@ -104,13 +105,11 @@ app.get('*',( req, res ) => {
 })
 
 
-    app.listen(3000, () =>{
-      console.log('Server is up on port 3000...')  
+    app.listen(port, () =>{
+      console.log('Server is up on port 3000...' + port + '...')  
     })
 
-// demo.com
-// demo.com/help
-// demo.com/about
+
 
 
 
