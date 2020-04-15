@@ -1,8 +1,5 @@
 
-//.catch( (error)=>{
-//     console.log('Hubo error en la peticion fetch.. ' + error()
-//     )
-// } )
+
 
 const weatherForm = document.querySelector('form')
 const busquedaValor = document.querySelector('input')
