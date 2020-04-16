@@ -25,7 +25,7 @@ weatherForm.addEventListener('submit',(e)=>{
                 mensage01.textContent = data.error
             }else{
                 mensage01.textContent = data.Nombre +'-'+data.Estado + '-CP:'+data.CP
-                mensage02.textContent = data.Latitud + ', ' + data.Longitud + ', Sensacion ' + data.Sensacion +', Temp:'+ data.Temp
+                mensage02.textContent = data.Latitud + ', ' + data.Longitud + ', Sensacion ' + data.Sensacion +', Temp:'+ data.Temp +' -> Viento: '+data.Viento
                 
             }
         })

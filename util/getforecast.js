@@ -15,9 +15,10 @@ const getForecast = (nombre_ciudad, retroCall ) =>{
                 retroCall('2) no se pudo obtener estado del tiempo.. error:' + body.cod +' -> ' + body.message, { Latitud:0, Longitud:0 })
             } else{
                 retroCall(  undefined,  {   Ciudad: body.name,
-                                            Estado: body.weather[0].description,
+                                            Estado: body.weather[0].main,
                                             Temp: body.main.temp,
                                             Sensacion: body.main.feels_like,
+                                            Viento: body.wind.speed,
                                             Latitud: body.coord.lat,
                                             Longitud: body.coord.lon }    )
             }

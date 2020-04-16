@@ -72,6 +72,7 @@ app.get('/weather',   ( req, res ) => {
                                                                     Latitud: resultado.Ciudad,
                                                                     Temp: resultado.Temp,
                                                                     Sensacion: resultado.Sensacion,
+                                                                    Viento: resultado.Viento,
                                                                     Latitud: resultado.Latitud,
                                                                     Longitud: resultado.Longitud })
                                           }
